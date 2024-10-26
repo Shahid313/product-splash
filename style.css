@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0;  
+    
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-shadow:0 2px #816fca;
+}
+
+.beta-text { 
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+/* =================
+    Intro
+   ================= */
+   
+.intro { 
+    color: #fff;
+    background-color: #9480e4;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/* ====================
+    Main content
+   ==================== */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+
+.img-main {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin: 0.167em 0;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+
+
+/* =================
+    Form
+   ================= */
+
+form {
+    width: 100%;
+}
+
+form,p {
+    max-width: 450px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.7em;
+    font-size: 1rem;
+    padding: 0.5em;
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+    border-color: #8a71ec;
+    background-color: #e6e8ec;
+}
+
+button {
+    width: 100%;
+    display: block;
+    padding: 0.5em;
+    padding: 1em 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #937bf1;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: #7e61f1;
+}
+
+
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+   
+
+/* =================
+    Media queries 
+   ================= */
+
+@media (min-width:576px){
+    .container {
+        display: flex;
+        
+    }
+
+    .intro, .main-content {
+        flex-basis: 50%;
+    }
+
+    .intro {
+        min-height: 100vh;
+    }
+
+    .main-content {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 2.625rem;
+    }
+
+    .beta-text {
+        font-size: 1.25rem;
+    }
+}
